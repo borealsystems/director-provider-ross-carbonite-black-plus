@@ -1,0 +1,10 @@
+{
+  "name": "director-provider-ross-carbonite-black-plus",
+  "version": "1.0.0",
+  "description": "Director Provider for Ross Carbonite Black Plus",
+  "main": "index.js",
+  "repository": "https://phabricator.boreal.systems/diffusion/8/director-provider-ross-carbonite-black-plus.git",
+  "author": "Oliver Herrmann <oliver@monoxane.io>",
+  "license": "MIT",
+  "private": true
+}
