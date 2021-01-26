@@ -1,0 +1,35 @@
+This document is the available RossTalk commands on this carbonite model.
+! implemeted and tested
+~ help
+= unable to test
+
+HELP
+
+Command   Description                        Syntax
+--------  ---------------------------------  ---------------------------------
+! CC        Execute custom control.            CC <cc>
+! FTB       Fade to black.                     FTB
+! GPI       Trigger GPI.                       GPI <gpi>
+~ HELP      Show this help message.            HELP
+! KEYAUTO   Toggle key autotrans.              KEYAUTO <bus_id>:<key>
+! KEYCUT    Toggle key cut.                    KEYCUT <bus_id>:<key>
+! KEYMODE   Switch the shaped mode of a key    KEYMODE <bus_id>:<key>:(ADDITIVE|FULL|NORMAL)
+= LOADSET   Load a set by name.                LOADSET <setname>
+! MEAUTO    Toggle ME autotrans.               MEAUTO <bus_id> 
+! MECUT     Toggle ME cut.                     MECUT <bus_id> 
+! MEM       Execute memory recall.             MEM <mem>[:<bus_id1>[:<bus_id2>[:...]]]
+! MEMSAVE   Execute a memory save.             MEMSAVE <mem>[:<bus_id1>[:<bus_id2>[:...]]]
+! MNEM      Change mnemonic text of a source.  MNEM <src_id>:<name>
+! MS        Load from media store.             MS <channel>:<location>:<media_num>
+! MVBOX     Assign source to multiviewer box.  MVBOX <mv>:<box>:<src_id>
+! SAVESET   Save a set by name.                SAVESET <setname>
+! TRANSINCL Include elements in transition.    TRANSINCL <bus_id>:(B|<key>[:B|<key>[:...]])
+! TRANSRATE Set transition rate.               TRANSRATE <bus_id>:<num_frames>
+! TRANSTYPE Set transition type.               TRANSTYPE <bus_id>:(DISS|WIPE|DVE|MEDIA)
+! XPT       Change XPoint.                     XPT (AUX:<aux>)|(AUX:1:<aux>)|(<bus_id>:PGM|PST|KEY:<key>)):<src_id>
+
+note: <src_id> is (IN:<inp>|MS:<ms>|AUX:<aux>|(AUX:1:<aux>)|BK|BG|ME:<me>:(PGM|PV|CLN|MW|MWA)|MME:<miniME>|MSC:<msc>)
+
+note: <bus_id> is (ME:<me>|MME:<miniME>|MSC:<msc>)
+
+note: BG is not a valid <src_id> for MVBOX command
